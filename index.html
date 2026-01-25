@@ -102,8 +102,9 @@
           <div class="card p-4">
             <p><strong>Address:</strong> Darbar House, Sherghati, 824211, India</p>
             <p>Send us a message using the form below:</p>
-            <!-- Email Contact Form -->
-            <form action="mailto:support@darbartechsolutions.com" method="post" enctype="text/plain">
+
+            <!-- FORMSPREE CONTACT FORM -->
+            <form action="https://formspree.io/f/xrepwdzj" method="POST">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -116,8 +117,16 @@
                 <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
               </div>
+
+              <!-- Optional extras -->
+              <input type="hidden" name="_subject" value="New message from DarbarTech Solutions website">
+              <input type="hidden" name="_captcha" value="true">
+              <input type="text" name="_gotcha" style="display:none">
+
               <button type="submit" class="btn btn-primary">Send</button>
             </form>
+            <!-- END FORMSPREE FORM -->
+
           </div>
         </div>
       </div>
